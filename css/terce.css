@@ -1,0 +1,70 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, #fff7e6, #fff0cc);
+        }
+
+        #montero-animation-container {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none; 
+            z-index: 9999; 
+            opacity: 0; 
+            animation: fadeInContainer 0.5s ease-out 0.5s forwards, fadeOutContainer 0.5s ease-in 4.5s forwards;
+        }
+
+        .montero-text {
+            font-family: 'Inter', sans-serif; 
+            font-size: 5rem; 
+            font-weight: 900; 
+            color: #3b076642; 
+            text-shadow: 
+                2px 2px 0px #ffffff,
+                4px 4px 0px rgba(0,0,0,0.1); 
+            opacity: 0;
+            transform: translateY(30px) scale(0.8);
+            animation: monteroEnterExit 4s ease-in-out 0.5s forwards; 
+        }
+
+        @keyframes monteroEnterExit {
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.8) rotate(-5deg);
+            }
+            25% { 
+                opacity: 1;
+                transform: translateY(0) scale(1) rotate(0deg);
+                text-shadow: 
+                    2px 2px 0px #ffffff,
+                    6px 6px 0px rgba(74, 43, 88, 0.3), 
+                    8px 8px 0px rgba(0,0,0,0.1);
+            }
+            75% { 
+                opacity: 1;
+                transform: translateY(0) scale(1) rotate(0deg);
+                text-shadow: 
+                    2px 2px 0px #ffffff,
+                    6px 6px 0px rgba(150, 61, 127, 0.3),
+                    8px 8px 0px rgba(0,0,0,0.1);
+            }
+            100% { 
+                opacity: 0;
+                transform: translateY(-30px) scale(0.8) rotate(5deg);
+            }
+        }
+
+        @keyframes fadeInContainer {
+            to { opacity: 1; }
+        }
+        @keyframes fadeOutContainer {
+            to { opacity: 0; }
+        }
+

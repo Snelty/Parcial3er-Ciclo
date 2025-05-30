@@ -1,0 +1,129 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #eef1f5; 
+            color: #2c3e50; 
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .header, .footer {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white;
+            padding: 2.2rem;
+            text-align: center;
+            border-radius: 0.85rem;
+            box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.12);
+            margin-bottom: 2.5rem;
+            font-size: 1.85rem;
+            font-weight: 700;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-volver {
+            background-color: #ff6b6b; 
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px; 
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block; 
+            margin-bottom: 2.5rem; 
+        }
+
+        .btn-volver:hover {
+            background-color: #ff4757; 
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .number-item, .letter-item {
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-radius: 0.6rem;
+            box-shadow: 0 0.2rem 0.5rem rgba(44, 62, 80, 0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+        }
+
+        .number-item:hover, .letter-item:hover {
+            transform: translateY(-5px) scale(1.04);
+            box-shadow: 0 0.4rem 1rem rgba(44, 62, 80, 0.15);
+        }
+
+        .number-item {
+            background-color: #1dd1a1; 
+        }
+
+        .letter-item {
+            background-color: #ff9f43; 
+        }
+        
+        .device-indicator-label {
+            background-color: #54a0ff; /* testeo para tipo de resp*/
+            color: white;
+            padding: 0.9rem 1.8rem;
+            text-align: center;
+            border-radius: 50px;
+            box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.2rem;
+            font-weight: 600;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .emoticon-item {
+            padding: 1.5rem;
+            font-size: 2.8rem; 
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.12);
+            margin-bottom: 1.5rem;
+            width: 100px; 
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+        }
+
+        .emoticon-item:hover {
+            transform: scale(1.12) rotate(10deg);
+            box-shadow: 0 0.35rem 1.1rem rgba(0, 0, 0, 0.18);
+        }
+
+        .emoticon-happy-default {
+            background-color: #feca57;
+            color: #573700;
+        }
+
+        .emoticon-sad {
+            background-color: #48dbfb; 
+            color: #003c4e;
+        }
+
+        .numbers-desktop .row {
+            margin-bottom: 1.5rem;
+        }
+        .numbers-desktop .row:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-mb {
+            margin-bottom: 2.8rem; 
+        }
+        .container {
+            max-width: 960px; 
+        }
